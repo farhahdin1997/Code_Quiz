@@ -1,5 +1,40 @@
 
-
-.button-colour{
-background-color:mediumslateblue
+/* Start Quiz Button Styling */
+.startButton button{
+    background: grey;
+    border-color: black; 
+    border-radius: 2
+    
+    px;
+    color: white;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 500;
+    outline:none;
+    padding: 15px 30px;
+    border-width: 4px;
 }
+
+/* Start Quiz Button Positioning */
+/* Display Box Positioning */
+/* Score Results Positioning */
+.startButton
+/*.displayBox,
+.quizBox,
+.scoreResults,
+.highscore*/ {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate( -50%, -50% );
+    box-shadow: 0px 4px 8px 0px #797777,
+                0px 6px 12px 0px #5d5b5b;
+}
+
+
+.list-group-item {
+    background-color: transparent;
+    border-top: 1px solid #ddd;
+    border-radius: 0;
+    
+    }
