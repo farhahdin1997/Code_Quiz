@@ -37,11 +37,55 @@
     </div>
 
           
-         
-        
-       
+<!-- Quiz Box -->
+<div class="quizBox">
+    <!-- Quiz Box Header -->
+    <header>
+        <div class="quizBoxTitle">Code Quiz</div>
+        <div class="quizBoxTimer">
+            <div class="timerText">Time Left:</div>
+            <div class="timerSeconds">60</div>
+        </div>
+    </header>
+    <!-- Quiz Box Body -->
+    <section>
+        <div class="question">
+        </div>
+        <div class="answerList">
+        </div>
+    </section>
+    <!-- Quiz Box Footer -->
+    <footer>
+        <div class="questionProgressBar">
+            <p><span class="questionNumberOn">1</span> of <span class="questionNumberTotal">10</span> Questions</p>
+        </div>
+    </footer>
+</div>
+<!-- Score Results -->
+<div class="scoreResults">
+    <div class="completeQuiz">
+        <div class="trophy">
+            <i class="fa fa-trophy" aria-hidden="true"></i>
+        </div>
+        <div class="finishText">You finished the quiz!</div>
+        <div class="resultText">
+            <p>You got <span class="answersCorrect">0</span> out of <span class="questionNumberTotal">10</span>
+                questions correct!</p>
+        </div>
     </div>
-    <script src="script.js"></script>
+    <form>
+        <span class="inputContent">
+            <input type="text" id="inputInitials" name="initials" placeholder="Enter Initials" autocomplete="off">
+        </span>
+        <div class="scoreResultButtons">
+            <button class="submitButton">Submit</button>
+            <button class="viewHighscore hide">View HighScore</button>
+            <button class="quit">Play Again</button>
+        </div>
+    </form>
+</div>
+
+<script src="script.js"></script>
 </body>
 
 </html>
