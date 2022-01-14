@@ -19,10 +19,10 @@
 /* Display Box Positioning */
 /* Score Results Positioning */
 .startButton
-/*.displayBox,
+.displayBox,
 .quizBox,
 .scoreResults,
-.highscore*/ {
+.highscore {
     left: 50%;
     position: absolute;
     top: 50%;
@@ -32,9 +32,179 @@
 }
 
 
-.list-group-item {
-    background-color: transparent;
-    border-top: 1px solid #ddd;
-    border-radius: 0;
-    
-    }
+
+/* Rules List Styling */
+.displayBox .rulesList {
+    padding: 15px 40px;
+}
+
+/* Rules List Styling */
+.displayBox .rulesList .rules {
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+/* Rules Span Styling */
+.displayBox .rulesList .rules span {
+    color: black;
+    font-weight: 500;
+}
+
+/* Display Box Buttons Styling */
+.displayBox .displayBoxButtons {
+    align-items: center;
+    border-top: 1px solid #797777;
+    display: flex;
+    height: 50px;
+    justify-content: flex-end;
+    padding: 0 50px;
+}
+
+
+* Display Box Buttons Styling */
+/* Initials Submit Button Styling */
+.displayBox .displayBoxButtons button,
+.scoreResults .scoreResultButtons button,
+.scoreResults button,
+.highscore button {
+    border-color: #ffdab9;
+    border-radius : 5px;
+    color: #ffdab9;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    height: 30px;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+    min-width: 100px;
+    padding: 0px 5px;
+}
+
+/* Customizing start button */
+/* Customizing display buttons */
+/* Customizing score result buttons */
+.displayBoxButtons button.continue,
+.scoreResults .scoreResultButtons button,
+.scoreResults button,
+.highscore button {
+    color: #ffdab9;
+    background: #797777;
+}
+
+.startButton button:hover,
+.displayBoxButtons button.continue:hover,
+.scoreResults .scoreResultButtons button:hover,
+.scoreResults button:hover,
+.highscore button:hover {
+    background: #5d5b5b;
+}
+
+.displayBoxButtons button.quit {
+    color:#ffdab9;
+    background:  #d2d2d2;
+}
+
+.displayBoxButtons button.quit:hover {
+    color: #ffdab9;
+    background : #797777;
+}
+
+/* Quiz Box Styling */
+.quizBox {
+    background: whitesmoke;
+    border-radius: 5px;
+    color: #797777;
+    opacity: 0;
+    pointer-events: none;
+    width: 65%;
+}
+
+/* Quiz Box Header Styling */
+.quizBox header {
+    align-items: center;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0px 3px 5px 1px #797777;
+    display: flex;
+    height: 75px;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+/* Quiz Box Title Styling */
+.quizBox header .quizBoxTitle {
+    font-size: 20px;
+}
+
+/* Quiz Box Title and Timer Styling */
+.quizBox header .quizBoxTitle,
+.quizBox header .quizBoxTimer {
+    background: #797777;
+    border: 1px solid #5d5b5b;
+    border-radius: 5px;
+    color: #ffdab9;
+    font-weight: 500;
+    padding: 10px;
+    user-select: none;
+}
+
+/* Quiz Box Timer Styling */
+.quizBox header .quizBoxTimer {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 130px;
+}
+
+.quizBox header .quizBoxTimer .timerSeconds {
+    background: #2e2c2c;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+/* Quiz Box Section Styling */
+.quizBox section {
+    padding: 25px 30px;
+}
+
+/* Quiz Box Section Question Styling */
+.quizBox section .question {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Quiz Box Section Answers Styling */
+.quizBox section .answerList {
+    display: block;
+    padding: 20px 0px;
+}
+
+.quizBox section .answerList .answer {
+    align-items: center;
+    background: #d2d2d2;
+    border: 1px solid #797777;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    margin-bottom: 7.5px;
+    justify-content: space-between;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+/* Quiz Box Footer Styling */
+.quizBox footer {
+    align-items: center;
+    border-top: 1px solid #797777;
+    display: flex;
+    height: 50px;
+    margin: 10px;
+    padding: 0px 10px;
+}
+
+.quizBox footer .questionProgressBar {
+    background: #797777;
+    border-radius: 5px;
+    color: #ffdab9;
+    padding: 10px;
+    user-select: none;
+}
